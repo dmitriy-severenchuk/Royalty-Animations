@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 190px;
+    background-color: #fff;
+}
+.footer__inner {
+    text-align: center;
+    background-color: #02026a;
+    padding: 50px 0;
+}
+.footer__text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 15px;
+    &--name-link {
+        text-decoration: none;
+        font-size: 22px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &-link {
+        font-size: 22px;
+        color: #e5ff00;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

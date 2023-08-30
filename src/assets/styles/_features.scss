@@ -1,0 +1,108 @@
+.features {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 240px 0 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.features__title {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 0.99;
+    margin-bottom: 25px;
+    background-color: #fff;
+    &--mobile {
+        display: none;
+    }
+    &-row {
+        line-height: 1.08;
+        display: inline-block;
+        overflow: hidden;
+        padding: 0 20px;
+        &--inner {
+            display: inline-block;
+            transform: translateY(100%);
+        }
+    }
+    &--element {
+        display: inline-block;
+        position: relative;
+        overflow: visible;
+        z-index: 1;
+        &__highlighter {
+            border-radius: 0 100px 100px 0;
+            display: inline-block;
+            background: url(@/assets/images/text-highlighter_features.svg) no-repeat;
+
+            background-position: left center;
+            height: 100%;
+
+            position: absolute;
+            left: -2px;
+            right: -10px;
+            top: 5px;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}
+.features__subtitle {
+    text-align: center;
+    width: 100%;
+    max-width: 740px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000b0;
+    margin: 0 auto;
+}
+
+.features__line-wrapper {
+    transform: rotate(-5deg);
+    margin-top: 80px;
+}
+.features__line {
+    width: calc(100% + 50px);
+    transform: translate(-30px, 0);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #000;
+    padding: 45px 10px;
+}
+.features__line__item {
+    display: flex;
+
+    &-image__wrapper {
+        max-height: 120px;
+        width: 190px;
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        overflow: hidden;
+
+        position: relative;
+    }
+    &-image {
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+
+        position: absolute;
+    }
+    &-content {
+        margin-left: 30px;
+        &-title {
+            color: #ffffff;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        &-text {
+            font-size: 24px;
+            color: #ffffff;
+        }
+    }
+}
