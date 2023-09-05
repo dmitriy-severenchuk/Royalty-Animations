@@ -34,7 +34,6 @@ export default defineComponent({
         gsap.timeline({
           scrollTrigger: {
             trigger: ".footer",
-
             start: "top 99%",
             toggleActions: "play resume resume none",
             end: "bottom 100%",
