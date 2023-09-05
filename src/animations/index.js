@@ -124,7 +124,7 @@ export const aboutAnimation = (
       .timeline({
         scrollTrigger: {
           trigger: about,
-          markers: true,
+
           start: "top 99%",
           toggleActions: "play resume resume none",
           end: "bottom 99%",
@@ -207,7 +207,7 @@ export const featuresAnimation = (
       .timeline({
         scrollTrigger: {
           trigger: features,
-          markers: true,
+
           start: "top 99%",
           toggleActions: "play resume resume none",
           end: "bottom 100%",
@@ -264,7 +264,7 @@ export const directionAnimation = (
       .timeline({
         scrollTrigger: {
           trigger: direction,
-          markers: true,
+
           start: "top 99%",
           toggleActions: "play resume resume none",
           end: "bottom 99%",
